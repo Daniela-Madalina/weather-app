@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="center-xy">
+        <div id="header-sections">
+            <div class="header-section" id="search-bar"></div>
+            <input class="header-section" id="city-title" placeholder="Search city">
+            <div class="header-section" id="theme-switch">
+                <div id="theme-switch-box">
+                    <div id="light" class="theme"><i class="fa-solid fa-sun fa-xs"></i></div>
+                    <div id="dark" class="theme"><i class="fa-solid fa-moon fa-xs"></i></div>
+                    <div id="dim" class="theme"><i class="fa-solid fa-cloud fa-xs"></i></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+
+        <!-- CURRENT WEATHER -->
+        <section id="current-weather">
+            <div class="section-content current-weather">
+                <div class="current-weather-icon">
+                    <img src="img/1-s.png" alt="" srcset="">
+                </div>
+                <p class="current-city">Bucharest</p>
+                <div class="current-w-box">
+                    <p class="temp current-temp">8°</p>
+                    <p class="temp current-temp-description">Cloudy</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="hourly-forecast-container">
+            <!-- HOURLY WEATHER -->
+            <section id="hourly-weather">
+                <div class="section-content">
+                    <p class="section-title">Hourly Weather</p>
+                    <div class="content">
+
+                        <ul class="hourly">
+
+                            <li class="center-xy">
+                                <p class="hour">12:00</p>
+                                <div class="icon-temp-wrapper">
+                                    <div class="i-hourly-forecast hourly-icon">
+                                        <img src="img/1-s.png" alt="" srcset="">
+                                    </div>
+                                    <p class="hourly-temp">9°</p>
+                                </div>
+                            </li>
+                           
+
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5-DAY FORECAST -->
+            <section id="daily-forecast">
+                <div class="section-content">
+                    <p class="section-title">5-Day Forecast</p>
+                    <div class="content">
+
+                        <ul class="daily">
+
+                            <li>
+                                <div class="forecast-box-left">
+                                    <div class="icon-temp-wrapper">
+                                        <div class="i-hourly-forecast i-forecast">
+                                            <img src="img/1-s.png" alt="" srcset="">
+                                        </div>
+                                        <p class="day">Friday</p>
+                                        <p class="day-temp-description">Cloudy</p>
+                                    </div>
+                                </div>
+                                <p class="day-temp">11°/3°</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="center-xy">
+        <p>Copyright &copy;2023</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
